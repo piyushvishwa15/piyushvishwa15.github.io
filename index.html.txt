@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Vishwakarma | Corporate Travel Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a; /* Dark charcoal */
+            color: #e0e0e0; /* Off-white */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .accent-gold {
+            color: #d4af37;
+        }
+        .bg-accent-gold {
+            background-color: #d4af37;
+        }
+        .border-accent-gold {
+            border-color: #d4af37;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #d4af37;
+            border: 3px solid #1a1a1a;
+        }
+        .custom-list li::before {
+            content: '•';
+            color: #d4af37;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-[#1f1f1f] shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-wider">P V</a>
+            <div class="hidden md:flex space-x-8 text-base tracking-wide">
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-white transition duration-300">Experience</a>
+                <a href="#achievements" class="text-gray-300 hover:text-white transition duration-300">Achievements</a>
+                <a href="#skills" class="text-gray-300 hover:text-white transition duration-300">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1f1f1f] px-6 pb-4">
+            <a href="#about" class="block py-2 text-lg text-gray-300 hover:text-white">About</a>
+            <a href="#experience" class="block py-2 text-lg text-gray-300 hover:text-white">Experience</a>
+            <a href="#achievements" class="block py-2 text-lg text-gray-300 hover:text-white">Achievements</a>
+            <a href="#skills" class="block py-2 text-lg text-gray-300 hover:text-white">Skills</a>
+            <a href="#contact" class="block py-2 text-lg text-gray-300 hover:text-white">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6 py-20 md:py-32">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-4">Piyush<br>Vishwakarma</h1>
+                <p class="text-xl md:text-2xl accent-gold font-semibold mb-8">Corporate Travel Specialist</p>
+                <p class="text-lg text-gray-400 max-w-lg mx-auto md:mx-0 mb-8">
+                    Crafting seamless, high-end travel experiences for executive and VIP clientele worldwide.
+                </p>
+                <a href="#contact" class="bg-accent-gold text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300 shadow-lg inline-block">
+                    Get in Touch
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-80 h-80">
+                    <div class="absolute inset-0 border-4 border-accent-gold rounded-full transform rotate-45"></div>
+                    <img src="piyush-dp.jpeg" alt="Piyush Vishwakarma" class="w-full h-full rounded-full object-cover shadow-2xl p-2">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- About Me Section -->
+    <section id="about" class="bg-[#1f1f1f] py-24 section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="piyush-dp2.jpeg" alt="Piyush in a professional setting" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">An Introduction</h2>
+                    <div class="w-24 h-1 bg-accent-gold mb-8"></div>
+                    <p class="text-lg text-gray-400 leading-relaxed mb-4">
+                        I am a dedicated travel professional with a passion for precision and excellence. My journey in the industry began with a foundation in luxury hospitality, which instilled in me a deep appreciation for impeccable service. This, combined with my comprehensive experience in airline operations, allows me to anticipate challenges and craft travel solutions that are not just efficient, but truly exceptional.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        I specialize in managing complex, high-stakes itineraries, ensuring every detail is perfect, from booking to arrival. My goal is to provide a seamless and stress-free travel experience that allows my clients to focus on what matters most to them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Professional Journey</h2>
+            <div class="w-24 h-1 bg-accent-gold mx-auto mb-16"></div>
+            <div class="max-w-4xl mx-auto relative border-l-2 border-gray-700 ml-6 md:ml-0">
+                <!-- BCD Travel -->
+                <div class="mb-16 pl-12 timeline-item">
+                    <h3 class="text-3xl font-bold text-white">Corporate Travel Consultant</h3>
+                    <p class="text-lg font-semibold accent-gold mb-1">BCD Travel, Bangalore</p>
+                    <p class="text-md text-gray-500 mb-6">December 2023 – Present</p>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        As a key consultant for executive and VIP clientele, my focus is on orchestrating complex international travel with flawless execution. I serve as a trusted advisor, ensuring every itinerary is both cost-effective and perfectly tailored to the client's needs, while proactively solving any challenges that arise.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 custom-list pl-4">
+                        <li>Coordinated seamless travel solutions for high-profile clients across North America and Canada.</li>
+                        <li>Recognized for exceptional performance with multiple awards, including the prestigious **‘Circle of Excellence’**.</li>
+                        <li>Mastered GDS systems like Sabre Red to manage intricate bookings and itinerary modifications.</li>
+                        <li>Maintained high client satisfaction and retention through strong relationship management and expert problem-solving.</li>
+                    </ul>
+                </div>
+                <!-- Indigo Airlines -->
+                <div class="mb-16 pl-12 timeline-item">
+                    <h3 class="text-3xl font-bold text-white">Customer Service Officer</h3>
+                    <p class="text-lg font-semibold accent-gold mb-1">Indigo Airlines, Bangalore</p>
+                    <p class="text-md text-gray-500 mb-6">August 2022 – December 2023</p>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        In a high-volume airport environment, I managed comprehensive ground support operations across multiple functions. My role required rapid problem-solving and meticulous coordination to ensure passenger satisfaction and operational efficiency.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 custom-list pl-4">
+                        <li>Successfully assumed additional responsibilities and was promoted to **Boarding Gate Manager**.</li>
+                        <li>Orchestrated on-time departures by directing boarding procedures for various aircraft, including ATR and Airbus models.</li>
+                        <li>Managed a high volume of flight bookings and complex itinerary changes using GDS systems Skyspeed and GoNow.</li>
+                    </ul>
+                </div>
+                <!-- Taj Exotica -->
+                <div class="pl-12 timeline-item">
+                    <h3 class="text-3xl font-bold text-white">Hospitality Intern</h3>
+                    <p class="text-lg font-semibold accent-gold mb-1">Taj Exotica Resort & Spa, Andaman</p>
+                    <p class="text-md text-gray-500 mb-6">December 2020 – April 2021</p>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        This rigorous internship provided my foundational training in luxury hospitality. I rotated through all core hotel departments, building a holistic understanding of five-star guest service and operational excellence from the ground up.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 custom-list pl-4">
+                        <li>Earned an **Appreciation Certificate** from the General Manager for outstanding commitment and service.</li>
+                        <li>Gained cross-functional expertise in Front Office, Housekeeping, Food & Beverage Service, and Food Production.</li>
+                        <li>Handled key front-office duties, including guest registration, room allocation, and cashiering.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="bg-[#1f1f1f] py-24 section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Awards & Accolades</h2>
+            <div class="w-24 h-1 bg-accent-gold mx-auto mb-16"></div>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-award text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Circle of Excellence</h3>
+                    <p class="text-gray-400">Honored for delivering exceptional results and significant contributions.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-trophy text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Top Performer</h3>
+                    <p class="text-gray-400">Recognized for consistent excellence and outstanding performance.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-star text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Star of the Quarter</h3>
+                    <p class="text-gray-400">Awarded for exceptional dedication, productivity, and team contribution.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-thumbs-up text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Pat on the Back</h3>
+                    <p class="text-gray-400">Commended for impactful efforts toward operational efficiency.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-user-tie text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Boarding Gate Manager</h3>
+                    <p class="text-gray-400">Entrusted with additional responsibilities at IndiGo, demonstrating leadership.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg text-center border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-certificate text-4xl accent-gold mb-3"></i>
+                    <h3 class="text-xl font-semibold text-white">Appreciation Certificate</h3>
+                    <p class="text-gray-400">Recognized for outstanding commitment during internship at Taj Exotica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Core Competencies</h2>
+            <div class="w-24 h-1 bg-accent-gold mx-auto mb-16"></div>
+            <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-briefcase"></i></div><p>Corporate Travel</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-plane-departure"></i></div><p>Itinerary Planning</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-cogs"></i></div><p>GDS Systems</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-headset"></i></div><p>Client Relations</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-lightbulb"></i></div><p>Problem Solving</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-comments"></i></div><p>Negotiation</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-handshake"></i></div><p>Vendor Coordination</p></div>
+                <div class="flex flex-col items-center"><div class="text-4xl accent-gold mb-2"><i class="fas fa-users"></i></div><p>Team Leadership</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#1f1f1f] py-24 section-fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Let's Connect</h2>
+            <div class="w-24 h-1 bg-accent-gold mx-auto mb-8"></div>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+                I am actively seeking new opportunities to apply my expertise. If you're looking for a dedicated travel professional, I would be delighted to hear from you.
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:piyushvishwa15@gmail.com" class="text-2xl text-gray-400 hover:accent-gold transition duration-300"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/piyush-vishwakarma-0852941a3" target="_blank" class="text-2xl text-gray-400 hover:accent-gold transition duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:+917205727162" class="text-2xl text-gray-400 hover:accent-gold transition duration-300"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>&copy; 2025 Piyush Vishwakarma. Designed with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a, header nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Fade-in animation on scroll
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
